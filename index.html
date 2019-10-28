@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aprendendo JavaScript</title>
+    </head>
+    <body>
+        <h2>Aprendendo JavaScript</h2>
+        <button onclick="window.location.href='http://www.google.com'; ">Ir ao google</button>
+        <button onclick="window.location.href=window.location.href; ">Refresh page com location.href</button>
+        <button onclick="window.location.reload(); ">Redirect page com location.reload()</button>
+        <br><br>        
+        <div id="area">
+            Bem vindo...
+        </div>
+        <button onclick="document.getElementById('area').innerHTML = 'Bem vindo ' + prompt('Qual seu nome');">Entrar</button>
+        <br><br>   
+        <!-------------------  -->
+        <button onclick="this.innerHTML = prompt('Qual nome do botao?');">Qual meu nome?</button>
+        <!-------------------  -->
+        <br><br><br><br>
+        <div id="area2">
+            Bem vindo...
+        </div>
+        <button onclick="entrar()">Entrar</button>
+        <!-------------------  -->
+        <br><br><br><br>
+        <div id="area3">
+            Bem vindo...
+        </div>
+        <button onclick="entrar3('Joao')">Entrar</button>
+        <br><br><br><br>
+        <div id="name">
+
+        </div>
+    </body>
+
+    <script type="text/javascript" src="script.js"></script>
+</html>
